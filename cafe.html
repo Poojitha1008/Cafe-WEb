@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Sparkles</title>
+  
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="cafes.css">
+  
+  <!-- Link to JavaScript file -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="screen">
+      <div class="welcome-container">
+        <div class="heart-animation">
+          <span class="heart">❤️</span>
+        </div>
+        <h1>Welcome to Sparkles & Coffee! 🌸</h1>
+        <p>Where every sip brings a smile!</p>
+        <button id="startOrderBtn" class="button">Start Your Order</button>
+      </div>
+    </div>
+
+    <!-- Menu Screen -->
+    <div id="menuScreen" class="screen hidden">
+      <h2 class="title">Our Magical Menu ✨</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <h3>Vanilla Cloud Latte</h3>
+          <p>Dreamy vanilla-infused coffee topped with fluffy foam</p>
+          <p>$4.50</p>
+          <button class="add-to-order" data-id="1">Add to Order</button>
+        </div>
+        <div class="menu-item">
+          <h3>Rainbow Macarons</h3>
+          <p>Colorful sweet treats in assorted flavors</p>
+          <p>$3.25</p>
+          <button class="add-to-order" data-id="2">Add to Order</button>
+        </div>
+        <div class="menu-item">
+          <h3>Strawberry Dreams Cake</h3>
+          <p>Light and airy strawberry-filled cake slice</p>
+          <p>$5.75</p>
+          <button class="add-to-order" data-id="3">Add to Order</button>
+        </div>
+        <div class="menu-item">
+          <h3>Cosmic Matcha Latte</h3>
+          <p>Emerald green matcha with star-shaped latte art</p>
+          <p>$4.75</p>
+          <button class="add-to-order" data-id="4">Add to Order</button>
+        </div>
+      </div>
+      <button id="viewCartBtn" class="button hidden">View Order (0)</button>
+    </div>
+
+    <!-- Cart Screen -->
+    <div id="cartScreen" class="screen hidden">
+      <h2>Your Sweet Order 🍰</h2>
+      <div id="cartItems"></div>
+      <div class="cart-summary">
+        <p>Total: $<span id="cartTotal">0.00</span></p>
+        <button id="proceedToPaymentBtn" class="button hidden">Proceed to Payment</button>
+      </div>
+    </div>
+
+    <!-- Payment Screen -->
+    <div id="paymentScreen" class="screen hidden">
+      <h2>Almost Done! 💖</h2>
+      <form id="paymentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" required>
+        <button type="submit" class="button">Pay with Sparkles! ✨</button>
+      </form>
+    </div>
+
+    <!-- Goodbye Screen -->
+    <div id="goodbyeScreen" class="screen hidden">
+      <div class="heart-animation">
+        <span class="heart">❤️</span>
+      </div>
+      <h2>Thank You! 🌟</h2>
+      <p>Your order is on its way to being made with love!</p>
+      <button id="orderAgainBtn" class="button">Order Again!</button>
+    </div>
+  </div>
+  
+  <!-- Link to your JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
